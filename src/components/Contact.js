@@ -6,13 +6,13 @@ class Contact extends Component {
     const {name, email, phone} = this.props
 
     return (
-      <div>
+      <div className='card card-body mb-3'>
         <h4>{name}</h4>
-        <ul>
-          <li>
+        <ul className='list-group'>
+          <li className='list-group-item'>
             {email}
           </li>
-          <li>
+          <li className='list-group-item'>
             {phone}
           </li>
         </ul>

@@ -9,8 +9,10 @@ class App extends Component {
     return (
       <div className='App'>
         <Header branding='Contact Manager' />
-        <Contact name='John Doe' email='jdoe@yahoo.com' phone='555-555-555' />
-        <Contact name='Karen Doe' email='kdoe@yahoo.com' phone='333-555-555' />
+        <div className='container'>
+          <Contact name='John Doe' email='jdoe@yahoo.com' phone='555-555-555' />
+          <Contact name='Karen Doe' email='kdoe@yahoo.com' phone='333-555-555' />
+        </div>
       </div>
     )
   }
