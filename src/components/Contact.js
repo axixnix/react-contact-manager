@@ -1,29 +1,30 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class Contact extends Component {
-  render () {
-    const {name, email, phone} = this.props.contact
+  state = {};
+
+  onShowClick = e => {};
+
+  render() {
+    const { name, email, phone } = this.props.contact;
 
     return (
-      <div className='card card-body mb-3'>
-        <h4>{name}</h4>
-        <ul className='list-group'>
-          <li className='list-group-item'>
-            {email}
-          </li>
-          <li className='list-group-item'>
-            {phone}
-          </li>
+      <div className="card card-body mb-3">
+        <h4>
+          {name} <i onClick={this.onShowClick} className="fas fa-sort-down" />{" "}
+        </h4>
+        <ul className="list-group">
+          <li className="list-group-item">{email}</li>
+          <li className="list-group-item">{phone}</li>
         </ul>
       </div>
-    )
+    );
   }
 }
 
-Contact.propTypes = {contact: PropTypes.object.isRequired
-}
+Contact.propTypes = { contact: PropTypes.object.isRequired };
 
-Contact.defaultProps = {name: 'Hokage',email: 'talk2mehokage@konoha.com'}
+Contact.defaultProps = { name: "Hokage", email: "talk2mehokage@konoha.com" };
 
-export default Contact
+export default Contact;
