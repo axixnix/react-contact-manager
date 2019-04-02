@@ -11,7 +11,6 @@ class App extends Component {
         <Header branding='Contact Manager' />
         <div className='container'>
           <Contacts />
-          <Contacts />
         </div>
       </div>
     )
