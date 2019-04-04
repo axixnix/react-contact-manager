@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Consumer } from "../context";
 
 class Contact extends Component {
   state = { showContactInfo: false };
 
-  onDeleteClick = () => {
-    this.props.deleteClickHandler();
-  };
+  onDeleteClick = () => {};
 
   render() {
     const { name, email, phone } = this.props.contact;
@@ -41,8 +40,7 @@ class Contact extends Component {
 }
 
 Contact.propTypes = {
-  contact: PropTypes.object.isRequired,
-  deleteClickHandler: PropTypes.func.isRequired
+  contact: PropTypes.object.isRequired
 };
 
 Contact.defaultProps = { name: "Hokage", email: "talk2mehokage@konoha.com" };
