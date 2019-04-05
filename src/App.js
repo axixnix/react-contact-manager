@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Contacts from './components/contacts/Contacts.js/index.js'
+import Contacts from './components/contacts/Contacts.js'
 import Header from './components/layout/Header'
 import { Provider } from './context'
 import 'bootstrap/dist/css/bootstrap.min.css'
