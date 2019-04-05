@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Contacts from './components/Contacts.js'
-import Header from './components/Header'
+import Contacts from './components/contacts/Contacts.js/index.js'
+import Header from './components/layout/Header'
 import { Provider } from './context'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
