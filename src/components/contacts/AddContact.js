@@ -1,10 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class AddContact extends Component {
-  render () {
-    return (
-      <div>
-      </div>
-    )
+  state = {
+    name: "",
+    email: "",
+    phone: ""
+  };
+  render() {
+    return <div />;
   }
 }
