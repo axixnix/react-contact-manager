@@ -6,6 +6,10 @@ class AddContact extends Component {
     email: "",
     phone: ""
   };
+
+  onChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
   render() {
     const { name, email, phone } = this.state;
     return (
@@ -50,7 +54,7 @@ class AddContact extends Component {
               <input
                 type="submit"
                 value="Add Contact"
-                className="btn btn-light btn-block"
+                className="btn btn-block btn-light "
               />
             </form>
           </div>
