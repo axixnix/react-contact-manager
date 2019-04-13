@@ -53,6 +53,7 @@ class AddContact extends Component {
                         name="name"
                         className="form-control form-control-lg"
                         placeholder="Enter Name ..."
+                        onChange={this.onChange}
                         value={name}
                       />
                     </div>
@@ -64,6 +65,7 @@ class AddContact extends Component {
                         name="email"
                         className="form-control form-control-lg"
                         placeholder="Enter Email ..."
+                        onChange={this.onChange}
                         value={email}
                       />
                     </div>
@@ -75,6 +77,7 @@ class AddContact extends Component {
                         name="phone"
                         className="form-control form-control-lg"
                         placeholder="Enter Phone ..."
+                        onChange={this.onChange}
                         value={phone}
                       />
                     </div>
