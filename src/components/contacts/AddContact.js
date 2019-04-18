@@ -13,7 +13,7 @@ class AddContact extends Component {
 
   onSubmit = (dispatch, e) => {
     e.preventDefault();
-    const { name, email, phone, errors } = this.state;
+    const { name, email, phone } = this.state;
 
     //check for errors
     if (name === "") {
@@ -54,7 +54,7 @@ class AddContact extends Component {
     this.setState({ [e.target.name]: e.target.value });
   };
   render() {
-    const { name, email, phone } = this.state;
+    const { name, email, phone, errors } = this.state;
 
     return (
       <Consumer>
